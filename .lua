@@ -5,8 +5,9 @@ RunService.Heartbeat:Connect(function()
         for i,v in pairs(game.Players:GetChildren()) do
             if v.Name ~= game.Players.LocalPlayer.Name then
                 local hrp = v.Character.HumanoidRootPart
+                local hrp2 = v.Character.Humanoid.HipHeight
                 hrp.AssemblyLinearVelocity = Vector3.new(0, 0, 0)   
-                hrp.HipHeight = 1.85
+                hrp2 = 1.85
             end
         end
     end)
