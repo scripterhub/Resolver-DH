@@ -6,7 +6,7 @@ RunService.Heartbeat:Connect(function()
         for i,v in pairs(game.Players:GetChildren()) do
             if v.Name ~= game.Players.LocalPlayer.Name then
                 local hrp = v.Character.HumanoidRootPart
-                hrp.AssemblyLinearVelocity = Vector3.new(0.1, 0, 0.1)   
+                hrp.AssemblyLinearVelocity = Vector3.new(0, 0, 0)   
             end
         end
     end)
@@ -17,7 +17,7 @@ local CPlayer = Aiming.Selected
 local hrp = CPlayer.Character.HumanoidRootPart
                 hrp.Velocity = Vector3.new(0, 0, hrp.Velocity.Y, 0)    
                 hrp.AssemblyLinearVelocity = Vector3.new(0, 0, hrp.Velocity.Y, 0)
-    wait(1)
+    wait(1000)
 end
 
 getgenv().VelocityChanger = true
