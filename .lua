@@ -17,6 +17,7 @@ local CPlayer = Aiming.Selected
 local hrp = CPlayer.Character.HumanoidRootPart
                 hrp.Velocity = Vector3.new(0, 0, hrp.Velocity.Y, 0)    
                 hrp.AssemblyLinearVelocity = Vector3.new(0, 0, hrp.Velocity.Y, 0)
+    wait(1)
 end
 
 getgenv().VelocityChanger = true
