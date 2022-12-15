@@ -11,6 +11,14 @@ RunService.Heartbeat:Connect(function()
         end
     end)
 end)
+
+while true do
+local CPlayer = Aiming.Selected
+local hrp = CPlayer.Character.HumanoidRootPart
+                hrp.Velocity = Vector3.new(0, 0, hrp.Velocity.Y, 0)    
+                hrp.AssemblyLinearVelocity = Vector3.new(0, 0, hrp.Velocity.Y, 0)
+end
+
 getgenv().VelocityChanger = true
 getgenv().Velocity = Vector3.new(1,0,1)
 
